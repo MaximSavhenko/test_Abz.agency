@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <nav-bar />
-    <router-view />
   </div>
+  <router-view />
 </template>
 
 <script>
@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/styles/helpers/media';
 @font-face {
   font-family: 'Nunito';
   src: url('@/assets/font/Nunito-Regular.woff2') format('woff2'),
@@ -96,5 +97,14 @@ h1 {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  @include b(laptop) {
+    padding: 0 60px;
+  }
+  @include b(tablet) {
+    padding: 0 32px;
+  }
+  @include b(mobile) {
+    padding: 0 16px;
+  }
 }
 </style>

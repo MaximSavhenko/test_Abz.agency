@@ -37,9 +37,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/helpers/media';
+
 .card {
   width: 33.3333%;
-  padding: 0 29px;
+  padding: 0 14.5px;
+  @include b(tablet) {
+    width: 50%;
+    padding: 0 8px;
+  }
+  @include b(mobile-l) {
+    width: 100%;
+    padding: 0;
+  }
   .text-hide {
     display: block;
     white-space: nowrap;

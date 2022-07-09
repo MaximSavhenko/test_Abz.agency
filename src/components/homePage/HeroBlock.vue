@@ -19,13 +19,22 @@ export default {}
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/helpers/media';
 .hero {
+  max-width: 1170px;
+  margin: 0 auto;
   height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('@/assets/images/background.jpg');
+  background: url('@/assets/images/background.jpg') no-repeat;
   margin-bottom: 140px;
+  @include b(laptop) {
+    height: 500px;
+  }
+  @include b(mobile-l) {
+    padding: 0 16px;
+  }
   &__content {
     max-width: 380px;
     display: flex;

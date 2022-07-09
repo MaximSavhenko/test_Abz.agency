@@ -1,8 +1,8 @@
 <template>
   <main>
     <HeroBlock />
-    <GetRequest />
-    <SignUp />
+    <div class="container"><GetRequest /></div>
+    <div class="container"><SignUp /></div>
   </main>
 </template>
 

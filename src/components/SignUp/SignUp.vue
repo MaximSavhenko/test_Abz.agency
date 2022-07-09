@@ -68,8 +68,6 @@ export default {
 }
 </script>
 
-
-
 <style scoped lang="scss">
 .sign-up {
   margin-bottom: 100px;

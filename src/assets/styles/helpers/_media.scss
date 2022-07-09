@@ -4,13 +4,11 @@
       @content;
     }
   }
-
   @if $point == laptop-m {
     @media (max-width: 1366px) {
       @content;
     }
   }
-
   @if $point == laptop {
     @media (max-width: 1024px) {
       @content;

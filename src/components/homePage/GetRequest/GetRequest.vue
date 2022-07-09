@@ -39,6 +39,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/helpers/media';
 .users {
   display: flex;
   flex-direction: column;
@@ -49,8 +50,16 @@ export default {
   &_card__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -29px 50px -29px;
+    margin: 0 -14.5px 50px -14.5px;
     gap: 29px 0;
+    @include b(tablet) {
+      margin: 0 -8px 50px -8px;
+      gap: 16px 0;
+    }
+    @include b(mobile) {
+      margin: 0 0 50px 0;
+      gap: 20px 0;
+    }
   }
   .btn {
     min-width: 120px;
