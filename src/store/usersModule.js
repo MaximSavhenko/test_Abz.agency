@@ -24,7 +24,8 @@ export const usersModule = {
   },
   actions: {
     async fetchUsers({ state, commit }) {
-      try {
+      commit('setPage', state.page = 1)
+      try {        
         commit('setLoading', true)
         const response = await axios.get(
           'https://frontend-test-assignment-api.abz.agency/api/v1/users',

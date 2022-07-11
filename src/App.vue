@@ -7,12 +7,30 @@
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import messages from '@/utils/messages'
+import { mapGetters } from 'vuex'
+
 export default {
   components: { NavBar },
+  computed: {
+    ...mapGetters({
+      errorGetter: 'error/errorGetter',
+    }),
+    error() {
+      return this.errorGetter
+    },
+  },
+  watch: {
+    error(fdError) {
+      this.$error(messages[fdError.message] || 'Something went wrong')
+    },
+  },
 }
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/helpers/toast';
+@import '@/assets/styles/helpers/tooltip';
 @import './assets/styles/helpers/media';
 @font-face {
   font-family: 'Nunito';

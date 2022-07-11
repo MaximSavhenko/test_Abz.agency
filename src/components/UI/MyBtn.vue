@@ -20,6 +20,17 @@ export default {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #ffe302;
+  }
+
+  &.disabled {
+    background-color: #b4b4b4;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: default;
+  }
 
   &:last-child {
     margin-right: 0;

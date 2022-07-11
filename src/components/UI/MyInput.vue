@@ -75,16 +75,24 @@ export default {
       }
     }
   }
-}
 
-.input-label {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  z-index: 5;
-  color: #7e7e7e;
-  transition: all 0.2s;
-  font-weight: 400;
+  .input-label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    z-index: 5;
+    color: #7e7e7e;
+    transition: all 0.2s;
+    font-weight: 400;
+  }
+  &.error {
+    input {
+      border: 2px solid #cb3d40;
+    }
+    .input-label {
+      color: #cb3d40 !important;
+    }
+  }
 }
 </style>

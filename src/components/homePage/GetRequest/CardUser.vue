@@ -4,12 +4,12 @@
       <div class="card__img">
         <img :src="user.photo" alt="user" />
       </div>
-      <span class="card__title">
+      <span class="card__title" v-tooltip="user.name">
         {{ user.name }}
       </span>
       <div class="card__body">
-        <span class="card__body-title text-hide">{{ user.position }}</span>
-        <a :href="`mailto:${user.email}`" class="text-hide">{{ user.email }}</a>
+        <span class="card__body-title text-hide" v-tooltip="user.position">{{ user.position }}</span>
+        <a :href="`mailto:${user.email}`" class="text-hide" v-tooltip="user.email">{{ user.email }}</a>
         <a :href="`tel:${user.phone}`">{{ numberValueReduced(user.phone) }}</a>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <label class="input-file">
     <input type="file" @change="updateInput($event)" />
     <span class="input-file__btn">Upload</span>
-    <p class="input-file__name" v-if="modelValue">
+    <p class="input-file__name" v-if="modelValue.name">
       <span>{{ modelValue.name }}</span>
     </p>
     <span class="input-file__name title" v-else>Upload your photo</span>
@@ -28,6 +28,17 @@ export default {
   height: 54px;
   border-radius: 4px;
   position: relative;
+  cursor: pointer;
+
+  &.error {
+    .input-file__btn,
+    .input-file__name {
+      border: 2px solid #cb3d40;
+    }
+    .input-file__name {
+      border-left: none;
+    }
+  }
 
   input {
     display: none;
