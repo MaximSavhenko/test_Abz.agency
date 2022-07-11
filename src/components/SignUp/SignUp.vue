@@ -5,7 +5,7 @@
     </h1>
     <h1 class="sign-up__title" v-else>Working with POST request</h1>
     <div v-if="successfully" class="sign-up__successfully">
-      <img src="@/assets/images/icons/success-image.svg" alt="success">
+      <img src="@/assets/images/icons/success-image.svg" alt="success" />
     </div>
     <form
       @submit.prevent="submitHandler"
@@ -96,10 +96,10 @@
 </template>
 
 <script>
-import { mapActions, mapState, mapMutations } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 import MyBtn from '../UI/MyBtn.vue'
 export default {
-  components: {MyBtn},
+  components: { MyBtn },
   props: {},
   data: () => ({
     name: '',
@@ -118,9 +118,6 @@ export default {
       error: (state) => state.postUser.error,
       successfully: (state) => state.postUser.successfully,
     }),
-    checkTypeError(error) {
-      error !== 'undefined'
-    },
   },
   methods: {
     ...mapActions({
@@ -208,8 +205,8 @@ export default {
     flex-direction: column;
     width: 100%;
     img {
-    max-height: 290px;
-    margin-bottom: 25px;
+      max-height: 290px;
+      margin-bottom: 25px;
     }
   }
 }

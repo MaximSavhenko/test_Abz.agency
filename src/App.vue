@@ -29,77 +29,14 @@ export default {
 </script>
 
 <style lang="scss">
+//Styles for toast, tooltip , Media queries , reset styles, fonts
 @import '@/assets/styles/helpers/toast';
 @import '@/assets/styles/helpers/tooltip';
-@import './assets/styles/helpers/media';
-@font-face {
-  font-family: 'Nunito';
-  src: url('@/assets/font/Nunito-Regular.woff2') format('woff2'),
-    url('@/assets/font/Nunito-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import '@/assets/styles/helpers/media';
+@import '@/assets/styles/helpers/fonts';
+@import '@/assets/styles/helpers/reset';
 
-@font-face {
-  font-family: 'Nunito';
-  src: url('@/assets/font/Nunito-Medium.woff2') format('woff2'),
-    url('@/assets/font/Nunito-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-button {
-  background-color: transparent;
-  color: inherit;
-  border-width: 0;
-  padding: 0;
-  cursor: pointer;
-}
-figure {
-  margin: 0;
-}
-ul,
-ol,
-dd {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-}
-p,
-body {
-  margin: 0;
-}
-cite {
-  font-style: normal;
-}
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin: 0;
-}
-
+// Basic style for tags
 body {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 16px;

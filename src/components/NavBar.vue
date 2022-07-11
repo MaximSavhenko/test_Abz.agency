@@ -7,7 +7,7 @@
     </div>
     <div class="nav-bar__btns">
       <my-btn @click="$router.push('/users')">Users</my-btn>
-      <my-btn @click="$router.push('/sign-up')">Sign up</my-btn>
+      <my-btn @click="$router.push('/sign_up')">Sign up</my-btn>
     </div>
   </nav>
 </template>

@@ -1,3 +1,7 @@
+/*
+In this module, we take all available users from the server, and smooth loading of users is also implemented here
+*/
+
 import axios from 'axios'
 export const usersModule = {
   state: () => ({
@@ -24,8 +28,8 @@ export const usersModule = {
   },
   actions: {
     async fetchUsers({ state, commit }) {
-      commit('setPage', state.page = 1)
-      try {        
+      commit('setPage', (state.page = 1))
+      try {
         commit('setLoading', true)
         const response = await axios.get(
           'https://frontend-test-assignment-api.abz.agency/api/v1/users',

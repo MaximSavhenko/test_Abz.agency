@@ -1,3 +1,7 @@
+/*
+This module is needed to distribute and catch errors, for further output to the front
+*/
+
 export const errorModule = {
   state: {
     error: null,

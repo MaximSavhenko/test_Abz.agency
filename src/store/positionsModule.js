@@ -1,3 +1,7 @@
+/*
+Here we take the available positions from the server, for further mapping to the front
+*/
+
 import axios from 'axios'
 export const positionsModule = {
   state: () => ({

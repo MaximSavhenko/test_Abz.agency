@@ -9,7 +9,7 @@
         mind. They should also be excited to learn, as the world of Front-End
         Development keeps evolving.
       </p>
-      <my-btn @click="$router.push('/sign-up')">Sign up</my-btn>
+      <my-btn @click="$router.push('/sign_up')">Sign up</my-btn>
     </div>
   </section>
 </template>

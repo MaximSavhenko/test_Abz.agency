@@ -1,3 +1,8 @@
+/*
+This module is needed to send a new registered user to the server(updateUser) and receive a token(getUserToken).
+We also get field validation implemented on the back end
+*/
+
 import axios from 'axios'
 export const postUserModule = {
   state: () => ({

@@ -15,8 +15,8 @@ const routes = [
       import(/* webpackChunkName: "about" */ '@/pages/UsersPage'),
   },
   {
-    path: '/',
-    name: 'sign-up',
+    path: '/sign_up',
+    name: 'sign_up',
     component: SignUpPage,
   },
 ]
