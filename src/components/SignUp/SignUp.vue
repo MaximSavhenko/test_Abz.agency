@@ -156,7 +156,7 @@ export default {
     &-inputs {
       display: flex;
       flex-direction: column;
-      margin-bottom: 43px;
+      margin-bottom: 25px;
     }
     &-input {
       margin-bottom: 50px;

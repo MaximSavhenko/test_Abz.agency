@@ -29,7 +29,7 @@ export default {}
   justify-content: center;
   background: url('@/assets/images/background.jpg') no-repeat;
   margin-bottom: 140px;
-  @include b(laptop) {
+  @include b(tablet) {
     height: 500px;
   }
   @include b(mobile-l) {
